@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950854063749",
+    "project_id": "quran-and-azkar-c14f1",
+    "storage_bucket": "quran-and-azkar-c14f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950854063749:android:f0c6f0a88c5479153afbec",
+        "android_client_info": {
+          "package_name": "com.omar.quranwazkar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950854063749-ud1vlcb8h7r71k9kg55o1barml1rpued.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC94Yi3JBcxLNj6RGcA5yAmZQIevToB8Xs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950854063749-ud1vlcb8h7r71k9kg55o1barml1rpued.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

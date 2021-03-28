@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">قرآن و أذكار</string>
+    <string name="app_namesplash">قرآن و أذكار</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="quran">قراءة القرآن</string>
+    <string name="azkar_sabah">أذكار الصباح</string>
+    <string name="azkar_masaa">أذكار المساء</string>
+    د
+    <string name="quran_sound">سماع القرآن</string>
+    <string name="azkar_noom">أذكار النوم</string>
+    <string name="qibla">القبلة</string>
+    <string name="sbha">السبحة</string>
+    <string name="title_activity_tasbeh_scrolling">ScrollingActivity</string>
+
+    <string name="shada">لاَ إِلَهَ إِلاَّ اللَّهَ</string>
+    <string name="sobhanallah">"سُبْحـانَ اللهِ وَبِحَمْـدِهِ."</string>
+    <string name="allahakbr">اللَّهُ أَكْبَرُ</string>
+    <string name="salahalanaby">الصلاة على النبي </string>
+    <string name="salaalnabyextend">اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد.</string>
+    <string name="hamd">الْحَمْدُ للّهِ</string>
+    <string name="astgfar">أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ</string>
+    <string name="lahawl">لا حَوْلَ وَلا قُوَّةَ إِلا باللَّهِ</string>
+    <string name="azkar_sabah_sot">أذكار الصباح صوت</string>
+    <string name="azkar_masaa_sot">أذكار المساء صوت</string>
+    <string name="salaalnabt_description">من صلى على حين يصبح وحين يمسى ادركته شفاعتى يوم القيامة.</string>
+    <string name="sobhanalla_description">من قالها مائة مرة حين يصبح و حين يمسي حُطَّتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ. لَمْ يَأْتِ أَحَدٌ يَوْمَ الْقِيَامَةِ بِأَفْضَلَ مِمَّا جَاءَ بِهِ إِلَّا أَحَدٌ قَالَ مِثْلَ مَا قَالَ أَوْ زَادَ عَلَيْهِ.</string>
+    <string name="desc2">لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءِ قَدِيرِ.</string>
+    <string name="desc3">من قالها 100 مرة في يوم كانت له عدل عشر رقاب، وكتبت له مئة حسنة، ومحيت عنه مئة سيئة، وكانت له حرزا من الشيطان في يومه ذلك حتى يمسي ولم يأتي أحد بأفضل مما جاء به إلا احد عمل أكثر من ذلك</string>
+
+</resources>
