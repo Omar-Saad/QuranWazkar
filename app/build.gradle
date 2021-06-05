@@ -11,8 +11,8 @@ android {
         applicationId "com.omar.quranwazkar"
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 2
-        versionName "1.0"
+        versionCode 3
+        versionName "1.1"
         multiDexEnabled true
 
 
