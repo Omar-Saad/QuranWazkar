@@ -32,12 +32,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/cons"
-        android:layout_below="@id/app_bar">
+        android:layout_below="@id/app_bar"
+        android:onClick="viewPagerElementsOnClick">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:onClick="viewPagerElementsOnClick" />
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,6 +49,7 @@
         android:layout_alignParentBottom="true"
 
         android:gravity="center"
+        android:onClick="viewPagerElementsOnClick"
         android:orientation="horizontal">
 
         <TextView

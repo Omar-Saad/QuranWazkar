@@ -1,6 +1,8 @@
 package com.omar.quranwazkar;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONArray;
@@ -19,13 +22,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class QuranListenActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView tvSong  , tvTime , tvDuration;
+    TextView tvSong  , tvTime , tvDuration,tvRecName;
     Button btnPlay,btnnext,btnPrev;
     SeekBar seekBarTime , seekBarVolume;
     MediaPlayer mediaPlayer;
     int pos;
     ArrayList<String>surahNames;
     int page_type=0;
+    private String recId;
+    private int server;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -51,13 +56,97 @@ public class QuranListenActivity extends AppCompatActivity implements View.OnCli
 
          page_type = getIntent().getIntExtra("page_type",0);
         if(page_type==0) {
+             final String [] listNames  = getResources().getStringArray(R.array.rec_id);
+
+
+            SharedPreferences preferences = getSharedPreferences("rec",MODE_PRIVATE);
+            recId = preferences.getString("recId" , "empty");
+            server = preferences.getInt("server" , -1);
+            int recNo = preferences.getInt("recNo" , -1);
+            final AlertDialog.Builder builder = new AlertDialog.Builder(QuranListenActivity.this);
+            builder.setTitle(R.string.choose_recuiter);
+            builder.setIcon(R.drawable.mic);
+          //  builder.setMessage(R.string.dialog_message);
+            builder.setSingleChoiceItems(listNames, -1, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    //recId =which;
+                    tvRecName.setText(listNames[which]);
+                    if(which==0){
+                        recId="balilah";
+                        server=6;
+                    }
+
+                    else if(which==1) {
+                        recId = "hatem";
+                        server=11;
+                    }
+                    else if(which==2){
+                        recId = "maher";
+                        server = 12;
+                    }
+                    else if(which==3) {
+                        recId = "jbrl";
+                        server = 8;
+                    }
+                    else if(which==4) {
+                        recId = "husr";
+                        server = 13;
+                    }
+                    else if(which==5) {
+                        recId = "afs";
+                        server = 8;
+                    }
+                    else if(which==6) {
+                        recId = "qtm";
+                        server = 6;
+                    }
+                    else if(which==7) {
+                        recId = "hazza";
+                        server = 11;
+                    }
+                    else if(which==8) {
+                        recId = "yasser";
+                        server = 11;
+                    }
+                    SharedPreferences.Editor editor = getSharedPreferences("rec",MODE_PRIVATE).edit();
+                    editor.putString("recId",recId);
+                    editor.putInt("server",server);
+                    editor.putInt("recNo",which);
+                    editor.apply();
+                    mediaPlayer.stop();
+                    mediaPlayer.reset();
+                    pos = getIntent().getIntExtra("surahNo", 1);
+                    playMedia(pos);
+                    dialog.dismiss();
+
+                }
+            });
+            //builder.show();
+            if(server==-1){
+                tvRecName.setText(R.string.choose_recuiter);
+                builder.show();
+            }
+            else
+            tvRecName.setText(listNames[recNo]);
+
+
+            tvRecName.setVisibility(View.VISIBLE);
+            tvRecName.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                   // mediaPlayer.pause();
+                    builder.show();
+
+                }
+            });
             pos = getIntent().getIntExtra("surahNo", 1);
             String s = getIntent().getStringExtra("surahName");
             tvSong.setText("" + s);
-
             mediaPlayer = new MediaPlayer();
-            playMedia(pos);
-
+            if(server!=-1) {
+                playMedia(pos);
+            }
 
             btnnext.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -120,8 +209,13 @@ public class QuranListenActivity extends AppCompatActivity implements View.OnCli
             }
 
             //     Log.e("tag"," m= "+temp);
-            if(page_type==0)
-            mediaPlayer.setDataSource("https://server8.mp3quran.net/afs/"+temp+".mp3");
+            if(page_type==0) {
+
+
+                mediaPlayer.setDataSource("https://server"+server+".mp3quran.net/"+recId+"/" + temp + ".mp3");
+
+
+            }
           else   if(page_type==1) {
              //   mediaPlayer.setDataSource("https://www.mboxdrive.com/yt1s.com - اذكار الصباح للمنشد ياسر فاروق ابو عمار.mp3");
                 AssetFileDescriptor afd = getAssets().openFd("azkar_sabah.mp3");
@@ -210,6 +304,8 @@ public class QuranListenActivity extends AppCompatActivity implements View.OnCli
                     });
 
                     mediaPlayer.start();
+
+
                     btnPlay.setBackgroundResource(R.drawable.pause);
 
                 }
@@ -278,6 +374,7 @@ public class QuranListenActivity extends AppCompatActivity implements View.OnCli
         seekBarVolume = findViewById(R.id.seekBarVolume);
         btnnext=findViewById(R.id.btnNext);
         btnPrev = findViewById(R.id.playPrev);
+        tvRecName = findViewById(R.id.tv_rec_name);
 
 
     }

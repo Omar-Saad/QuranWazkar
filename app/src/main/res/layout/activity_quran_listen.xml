@@ -22,11 +22,25 @@
         android:textStyle="bold" />
 
 
+    <TextView
+        android:id="@+id/tv_rec_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/baradareqa"
+        android:gravity="center"
+        android:text="name"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         app:srcCompat="@drawable/quranbackground" />
 
     <SeekBar
@@ -82,7 +96,8 @@
             android:layout_marginEnd="20dp"
             android:background="@drawable/playprev"
             android:foregroundGravity="center"
-            android:gravity="center" />
+            android:gravity="center"
+            android:layout_marginRight="20dp" />
 
         <Button
             android:id="@+id/btnPlay"
@@ -101,7 +116,8 @@
             android:layout_marginEnd="20dp"
             android:background="@drawable/playnext"
             android:foregroundGravity="right"
-            android:gravity="right" />
+            android:gravity="right"
+            android:layout_marginRight="20dp" />
     </LinearLayout>
 
     <LinearLayout
