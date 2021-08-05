@@ -1,4 +1,4 @@
-package com.omar.quranwazkar;
+package com.omar.quranwazkar.ui;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.omar.quranwazkar.R;
 
 import java.util.ArrayList;
 

@@ -1,9 +1,11 @@
-package com.omar.quranwazkar;
+package com.omar.quranwazkar.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.omar.quranwazkar.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     Thread.sleep(1000);
                     startActivity(new Intent(MainActivity.this, ScrollingActivity.class));
-
+                    finish();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

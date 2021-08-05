@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layoutDirection="rtl"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ScrollingActivity"
+    tools:context=".ui.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
     <LinearLayout
@@ -17,7 +17,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
@@ -29,23 +29,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="right|center"
                 android:layout_marginRight="15dp"
                 android:fontFamily="@font/baradareqa"
                 android:foregroundGravity="right"
                 android:gravity="right"
                 android:text="@string/quran"
                 android:textColor="@color/colorAccent"
-                android:textSize="60sp"
-                app:autoSizeMaxTextSize="80sp"
-                app:autoSizeMinTextSize="30sp"
-                app:autoSizeStepGranularity="2sp"
-                app:autoSizeTextType="uniform" />
+                android:textSize="@dimen/_46sdp"
+               />
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
                 android:layout_gravity="center|left"
                 android:foregroundGravity="center"
                 app:srcCompat="@drawable/quran" />
@@ -55,7 +52,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
@@ -67,22 +64,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="right|center"
                 android:layout_marginRight="15dp"
                 android:fontFamily="@font/baradareqa"
                 android:foregroundGravity="right"
                 android:gravity="right"
                 android:text="@string/quran_sound"
                 android:textColor="@color/colorAccent"
-                android:textSize="60sp"
-                app:autoSizeMaxTextSize="80sp"
-                app:autoSizeMinTextSize="30sp"
-                app:autoSizeStepGranularity="2sp"
-                app:autoSizeTextType="uniform" />
+                android:textSize="@dimen/_46sdp"
+
+              />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="9dp"
                 android:foregroundGravity="center"
@@ -93,7 +88,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
@@ -113,15 +108,12 @@
                 android:gravity="right"
                 android:text="@string/azkar_sabah"
                 android:textColor="@color/colorAccent"
-                android:textSize="55sp"
-                app:autoSizeMaxTextSize="80sp"
-                app:autoSizeMinTextSize="30sp"
-                app:autoSizeStepGranularity="2sp"
-                app:autoSizeTextType="uniform" />
+                android:textSize="@dimen/_46sdp"
+                />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="9dp"
                 android:foregroundGravity="center"
@@ -131,7 +123,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card7"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
 
@@ -145,22 +137,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="center|right"
                 android:layout_marginRight="15dp"
                 android:fontFamily="@font/baradareqa"
-                android:foregroundGravity="right"
                 android:gravity="right"
                 android:text="@string/azkar_sabah_sot"
                 android:textColor="@color/colorAccent"
-                android:textSize="45sp"
-                app:autoSizeMaxTextSize="80sp"
-                app:autoSizeMinTextSize="30sp"
-                app:autoSizeStepGranularity="2sp"
-                app:autoSizeTextType="uniform" />
+                android:textSize="@dimen/_36sdp"
+                />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="9dp"
                 android:foregroundGravity="center"
@@ -171,7 +159,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
@@ -185,22 +173,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="right|center"
                 android:layout_marginRight="15dp"
                 android:fontFamily="@font/baradareqa"
                 android:foregroundGravity="right"
                 android:gravity="right"
                 android:text="@string/azkar_masaa"
                 android:textColor="@color/colorAccent"
-                android:textSize="55sp"
-                app:autoSizeMaxTextSize="80sp"
-                app:autoSizeMinTextSize="30sp"
-                app:autoSizeStepGranularity="2sp"
-                app:autoSizeTextType="uniform" />
+                android:textSize="@dimen/_46sdp"
+                />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="9dp"
                 android:foregroundGravity="center"
@@ -210,7 +195,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card8"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
 
@@ -224,22 +209,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="right|center"
                 android:layout_marginRight="15dp"
                 android:fontFamily="@font/baradareqa"
                 android:foregroundGravity="right"
                 android:gravity="right"
                 android:text="@string/azkar_masaa_sot"
                 android:textColor="@color/colorAccent"
-                android:textSize="45sp"
-                app:autoSizeMaxTextSize="80sp"
-                app:autoSizeMinTextSize="30sp"
-                app:autoSizeStepGranularity="2sp"
-                app:autoSizeTextType="uniform" />
+                android:textSize="@dimen/_38sdp"
+                />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="9dp"
                 android:foregroundGravity="center"
@@ -250,7 +232,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
@@ -264,22 +246,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="right|center"
                 android:layout_marginRight="15dp"
                 android:fontFamily="@font/baradareqa"
                 android:foregroundGravity="right"
                 android:gravity="right"
                 android:text="@string/azkar_noom"
                 android:textColor="@color/colorAccent"
-                android:textSize="55sp"
-                app:autoSizeMaxTextSize="80sp"
-                app:autoSizeMinTextSize="30sp"
-                app:autoSizeStepGranularity="2sp"
-                app:autoSizeTextType="uniform" />
+                android:textSize="@dimen/_46sdp"
+                />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="9dp"
                 android:foregroundGravity="center"
@@ -289,7 +268,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card6"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
@@ -303,22 +282,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="right|center"
                 android:layout_marginRight="15dp"
                 android:fontFamily="@font/baradareqa"
                 android:foregroundGravity="right"
                 android:gravity="right"
                 android:text="@string/sbha"
                 android:textColor="@color/colorAccent"
-                android:textSize="55sp"
-                app:autoSizeMaxTextSize="80sp"
-                app:autoSizeMinTextSize="30sp"
-                app:autoSizeStepGranularity="2sp"
-                app:autoSizeTextType="uniform" />
+                android:textSize="@dimen/_46sdp"
+             />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="9dp"
                 android:foregroundGravity="center"

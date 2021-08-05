@@ -1,4 +1,4 @@
-package com.omar.quranwazkar;
+package com.omar.quranwazkar.ui;
 
 public class ViewPgaerModel {
     String zkr_tv;

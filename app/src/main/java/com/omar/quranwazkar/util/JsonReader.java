@@ -1,4 +1,4 @@
-package com.omar.quranwazkar;
+package com.omar.quranwazkar.util;
 
 import android.content.Context;
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:layoutDirection="rtl"
-    tools:context=".QuranActivity">
+    tools:context=".ui.QuranActivity">
 
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdfView"

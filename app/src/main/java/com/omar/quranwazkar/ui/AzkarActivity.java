@@ -1,4 +1,4 @@
-package com.omar.quranwazkar;
+package com.omar.quranwazkar.ui;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
+
+import com.omar.quranwazkar.util.JsonReader;
+import com.omar.quranwazkar.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

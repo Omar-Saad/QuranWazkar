@@ -1,4 +1,4 @@
-package com.omar.quranwazkar;
+package com.omar.quranwazkar.ui;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,6 +10,8 @@ import android.view.View;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+
+import com.omar.quranwazkar.R;
 
 public class ScrollingActivity extends AppCompatActivity {
     CardView card1;
